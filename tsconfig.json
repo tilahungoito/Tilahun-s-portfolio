@@ -7,12 +7,6 @@
     ],
     "allowJs": true,
     "skipLibCheck": true,
-    "typeRoots": [
-      "node_modules/@types"
-    ],
-    "types": [
-      "@sentry/nextjs"
-    ],
     "strict": true,
     "noEmit": true,
     "esModuleInterop": true,
@@ -28,12 +22,14 @@
       }
     ],
     "paths": {
-      "@/*": [
+      "@/*": [  
         "./*"
       ]
-    }
+    },
+     // Add this line
   },
   "include": [
+    "global.d.ts",
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
